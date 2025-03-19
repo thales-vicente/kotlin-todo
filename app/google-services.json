@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737417667279",
+    "project_id": "kotlin-todo-bf6a4",
+    "storage_bucket": "kotlin-todo-bf6a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737417667279:android:3869975cd3b31c20b98dba",
+        "android_client_info": {
+          "package_name": "com.example.kotlintodo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDabtmlFILocA2_I60I8Rz3a4yzjadTX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
