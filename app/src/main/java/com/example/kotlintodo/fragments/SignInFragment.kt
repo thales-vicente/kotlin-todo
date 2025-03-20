@@ -50,6 +50,7 @@ class SignInFragment : Fragment() {
             val password = binding.etPassword.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
+                binding.progressBar.visibility = View.VISIBLE
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(
                     OnCompleteListener {
                         if (it.isSuccessful) {
@@ -59,7 +60,11 @@ class SignInFragment : Fragment() {
                             Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT)
                                 .show()
                         }
+                        binding.progressBar.visibility = View.GONE
                     })
+            }else{
+                Toast.makeText(context, "Empty fields not allowed", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
     }
