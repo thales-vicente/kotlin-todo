@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SignUpFragment">
+    tools:context=".fragments.SignInFragment">
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="@string/sign_up"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -58,7 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="-64dp"
+        android:layout_marginTop="12dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="true"
@@ -126,68 +126,32 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="12dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card2">
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/white"
-            app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_rePassword"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/white"
-                android:hint="@string/retype_password"
-                android:inputType="textPassword"
-                android:paddingStart="12dp"
-                android:paddingTop="15dp"
-                android:paddingEnd="12dp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
     <ImageView
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
         android:src="@drawable/btn"
-        app:layout_constraintEnd_toEndOf="@+id/card3"
-        app:layout_constraintTop_toBottomOf="@id/card3" />
+        app:layout_constraintEnd_toEndOf="@+id/card2"
+        app:layout_constraintTop_toBottomOf="@id/card2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:text="@string/already_registered"
+        android:text="@string/not_registered"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@id/card3"
-        app:layout_constraintTop_toBottomOf="@id/card3" />
+        app:layout_constraintStart_toStartOf="@id/card2"
+        app:layout_constraintTop_toBottomOf="@id/card2" />
 
     <TextView
         android:id="@+id/authTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="@string/sign_in"
+        android:text="@string/sign_up"
         android:textColor="@color/text_color"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView2"

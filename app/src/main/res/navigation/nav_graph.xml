@@ -12,9 +12,9 @@
         tools:layout="@layout/fragment_splash" />
     <fragment
         android:id="@+id/signinFragment"
-        android:name="com.example.kotlintodo.fragments.SigninFragment"
+        android:name="com.example.kotlintodo.fragments.SignInFragment"
         android:label="fragment_signin"
-        tools:layout="@layout/fragment_signin" />
+        tools:layout="@layout/fragment_sign_in" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.kotlintodo.fragments.SignUpFragment"
