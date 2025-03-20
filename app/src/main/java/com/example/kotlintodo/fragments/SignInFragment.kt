@@ -50,7 +50,7 @@ class SignInFragment : Fragment() {
             val password = binding.etPassword.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(
+                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(
                     OnCompleteListener {
                         if (it.isSuccessful) {
                             Toast.makeText(context, "Login Successfully", Toast.LENGTH_SHORT).show()
